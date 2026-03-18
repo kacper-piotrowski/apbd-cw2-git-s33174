@@ -4,7 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("Hello, APBD Lab2!");
         Console.WriteLine("Hello, main branch!");
+        Console.WriteLine("Hello, feature-conflict branch!");
         double[] numbers = new double[5];
         Console.WriteLine("You will enter five numbers!");
         for (int i = 0; i < 5; i++)
