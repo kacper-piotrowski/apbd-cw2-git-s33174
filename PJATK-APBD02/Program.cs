@@ -24,6 +24,11 @@ class Program
         StatisticsHelper sh = new StatisticsHelper(numbers);
         sh.FindMax();
     }
+
+    void CalculateAverage(int[] values)
+    {
+        Console.WriteLine($"Your average is: {values.Average()}");
+    }
 }
 
 class StatisticsHelper
