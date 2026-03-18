@@ -21,8 +21,10 @@ class Program
             }
             
         }
+        Console.WriteLine();
         StatisticsHelper sh = new StatisticsHelper(numbers);
         sh.FindMax();
+        Console.WriteLine();
         
         int[] numbers2 = new int[5];
         Console.WriteLine("You will enter five numbers again!");
@@ -39,12 +41,22 @@ class Program
                 Console.WriteLine("Wrong number format!");
             }
         }
+        Console.WriteLine();
+        Console.WriteLine("Your numbers are:");
+        Console.WriteLine(string.Join(", ", numbers2));
         CalculateAverage(numbers2);
+        
+        CalculateMax(numbers2);
     }
 
     static void CalculateAverage(int[] values)
     {
         Console.WriteLine($"Your average is: {values.Average()}");
+    }
+
+    static void CalculateMax(int[] values)
+    {
+        Console.WriteLine($"Your biggest number is: {values.Max()}");
     }
 }
 
