@@ -46,6 +46,11 @@ class Program
     {
         Console.WriteLine($"Your average is: {values.Average()}");
     }
+
+    static void CalculateMax(int[] values)
+    {
+        Console.WriteLine($"Your biggest number is: {values.Max()}");
+    }
 }
 
 class StatisticsHelper
