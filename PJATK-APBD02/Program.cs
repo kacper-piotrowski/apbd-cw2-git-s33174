@@ -10,7 +10,17 @@ class Program
         for (int i = 0; i < 5; i++)
         {
             Console.WriteLine("{0}.Enter number: ", i+1);
-            numbers[i] = double.Parse(Console.ReadLine());
+            try
+            {
+                numbers[i] = double.Parse(Console.ReadLine());
+            }
+            catch (FormatException)
+            {
+                numbers[i] = 0;
+                Console.WriteLine("Wrong number format!");
+            }
+
+
         }
     }
 }
