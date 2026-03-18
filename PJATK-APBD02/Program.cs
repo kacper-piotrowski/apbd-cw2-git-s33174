@@ -42,11 +42,15 @@ class Program
             }
         }
         Console.WriteLine();
+        
         Console.WriteLine("Your numbers are:");
         Console.WriteLine(string.Join(", ", numbers2));
+        
         CalculateAverage(numbers2);
         
         CalculateMax(numbers2);
+        
+        CalculateMin(numbers2);
     }
 
     static void CalculateAverage(int[] values)
