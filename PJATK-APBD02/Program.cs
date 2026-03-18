@@ -58,6 +58,11 @@ class Program
     {
         Console.WriteLine($"Your biggest number is: {values.Max()}");
     }
+
+    static void CalculateMin(int[] values)
+    {
+        
+    }
 }
 
 class StatisticsHelper
