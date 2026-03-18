@@ -19,9 +19,10 @@ class Program
                 numbers[i] = 0;
                 Console.WriteLine("Wrong number format!");
             }
-
-
+            
         }
+        StatisticsHelper sh = new StatisticsHelper(numbers);
+        sh.FindMax();
     }
 }
 
@@ -32,6 +33,11 @@ class StatisticsHelper
     public StatisticsHelper(double[] list)
     {
         this.List = list;
+    }
+    
+    public void FindMax()
+    {
+        Console.WriteLine($"Your biggest number is: {List.Max()}");
     }
 
 }
