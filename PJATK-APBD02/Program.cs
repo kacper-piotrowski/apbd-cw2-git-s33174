@@ -61,7 +61,7 @@ class Program
 
     static void CalculateMin(int[] values)
     {
-        
+        Console.WriteLine($"Your smallest number is: {values.Min()}");
     }
 }
 
